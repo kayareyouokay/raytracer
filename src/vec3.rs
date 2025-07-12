@@ -17,9 +17,9 @@ impl Vec3 {
     pub fn random() -> Self {
         let mut rng = rand::thread_rng();
         Self {
-            x: rng.gen(),
-            y: rng.gen(),
-            z: rng.gen(),
+            x: rng.gen::<f64>(),
+            y: rng.gen::<f64>(),
+            z: rng.gen::<f64>(),
         }
     }
 
